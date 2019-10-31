@@ -1,0 +1,1232 @@
+{
+  "query_parameter_provenance": {
+    "deployment0003_RS03ASHS-MJ03B-07-TMPSFA301-streamed-tmpsf_sample_provenance_20191014T000004.200391-20191027T162313.546454.json": {
+      "beginDT": "2019-10-14T00:00:00", 
+      "begin": 3780000000.0, 
+      "end": 3781209600.0, 
+      "query_type": "JSON", 
+      "include_annotations": true, 
+      "endDT": "2019-10-28T00:00:00", 
+      "include_provenance": true, 
+      "limit": null, 
+      "strict_range": false, 
+      "requested_stream": "RS03ASHS-MJ03B-07-TMPSFA301-streamed-tmpsf_sample", 
+      "query_uuid": "11fb8be1-6a04-495a-8adc-9412876321fa"
+    }, 
+    "deployment0003_RS03ASHS-MJ03B-07-TMPSFA301-streamed-tmpsf_sample_provenance_20191028T163043.502643-20191031T180123.348907.json": {
+      "beginDT": "2019-10-28T00:00:00", 
+      "begin": 3781209600.0, 
+      "end": 3781533683.349, 
+      "query_type": "JSON", 
+      "include_annotations": true, 
+      "endDT": "2019-10-31T18:01:23.349000", 
+      "include_provenance": true, 
+      "limit": null, 
+      "strict_range": false, 
+      "requested_stream": "RS03ASHS-MJ03B-07-TMPSFA301-streamed-tmpsf_sample", 
+      "query_uuid": "28b3527d-0f6d-42df-88c3-f79f4024a4da"
+    }, 
+    "deployment0003_RS03ASHS-MJ03B-07-TMPSFA301-streamed-tmpsf_sample_provenance_20191001T120124.784853-20191013T235954.200057.json": {
+      "beginDT": "2019-10-01T12:01:23.349000", 
+      "begin": 3778920083.349, 
+      "end": 3780000000.0, 
+      "query_type": "JSON", 
+      "include_annotations": true, 
+      "endDT": "2019-10-14T00:00:00", 
+      "include_provenance": true, 
+      "limit": null, 
+      "strict_range": false, 
+      "requested_stream": "RS03ASHS-MJ03B-07-TMPSFA301-streamed-tmpsf_sample", 
+      "query_uuid": "d7f1d582-875a-4db1-8666-55912ef16bbf"
+    }
+  }, 
+  "instrument_provenance": {
+    "RS03ASHS-MJ03B-07-TMPSFA301": [
+      {
+        "@class": ".XDeployment", 
+        "eventId": 242, 
+        "editPhase": "OPERATIONAL", 
+        "eventName": "RS03ASHS-MJ03B-07-TMPSFA301", 
+        "eventType": "DEPLOYMENT", 
+        "referenceDesignator": "RS03ASHS-MJ03B-07-TMPSFA301", 
+        "deploymentNumber": 1, 
+        "versionNumber": 1, 
+        "inductiveId": null, 
+        "assetUid": null, 
+        "dataSource": "Load from [RS03ASHS_Deploy.xlsx]", 
+        "lastModifiedTimestamp": 1572043058076, 
+        "tense": "UNKNOWN", 
+        "ingestInfo": [], 
+        "notes": null, 
+        "mooring": {
+          "@class": ".XMooring", 
+          "assetId": 963, 
+          "assetType": "Mooring", 
+          "dataSource": "BulkLoad from [platform_bulk_load-AssetRecord.csv]", 
+          "deliveryDate": null, 
+          "deliveryOrderNumber": null, 
+          "depthRating": null, 
+          "description": "Cabled ASHES Vent Field: Medium Power Junction Box", 
+          "editPhase": "OPERATIONAL", 
+          "events": [], 
+          "firmwareVersion": null, 
+          "institutionPropertyNumber": null, 
+          "institutionPurchaseOrderNumber": null, 
+          "lastModifiedTimestamp": 1572042718794, 
+          "location": null, 
+          "manufacturer": "UW-APL", 
+          "mobile": false, 
+          "modelNumber": "RS03ASHS-MJ03B", 
+          "name": "SN0033", 
+          "notes": null, 
+          "ooiPartNumber": null, 
+          "ooiPropertyNumber": null, 
+          "ooiSerialNumber": null, 
+          "owner": "University of Washington", 
+          "physicalInfo": {
+            "height": -1.0, 
+            "length": -1.0, 
+            "weight": -1.0, 
+            "width": -1.0
+          }, 
+          "powerRequirements": null, 
+          "purchaseDate": null, 
+          "purchasePrice": null, 
+          "remoteResources": [], 
+          "serialNumber": "SN0033", 
+          "shelfLifeExpirationDate": null, 
+          "softwareVersion": null, 
+          "uid": "ATAPL-65244-820-0033"
+        }, 
+        "node": null, 
+        "eventStartTime": 1411870860000, 
+        "eventStopTime": 1502667000000, 
+        "waterDepth": 1540.0, 
+        "location": {
+          "depth": 1540.0, 
+          "latitude": 45.93362, 
+          "longitude": -130.01368, 
+          "orbitRadius": null, 
+          "location": [
+            -130.01368, 
+            45.93362
+          ]
+        }, 
+        "deployedBy": null, 
+        "deployCruiseInfo": {
+          "@class": ".CruiseInfo", 
+          "assetUid": null, 
+          "cruiseIdentifier": null, 
+          "dataSource": "Load from [CruiseInformation.xlsx]", 
+          "editPhase": "OPERATIONAL", 
+          "eventId": 8, 
+          "eventName": "TN-313", 
+          "eventStartTime": 1405209600000, 
+          "eventStopTime": 1412553600000, 
+          "eventType": "CRUISE_INFO", 
+          "lastModifiedTimestamp": 1572042617314, 
+          "notes": null, 
+          "shipName": "R/V Thomas G. Thompson", 
+          "tense": "UNKNOWN", 
+          "uniqueCruiseIdentifier": "TN-313"
+        }, 
+        "recoveredBy": null, 
+        "recoverCruiseInfo": null, 
+        "sensor": {
+          "@class": ".XInstrument", 
+          "assetId": 2158, 
+          "assetType": "Sensor", 
+          "dataSource": "BulkLoad from [sensor_bulk_load-AssetRecord.csv]", 
+          "deliveryDate": 1352764800000, 
+          "deliveryOrderNumber": null, 
+          "depthRating": null, 
+          "description": "Diffuse Vent Fluid 3-D Temperature Array: TMPSF Series A", 
+          "editPhase": "OPERATIONAL", 
+          "events": [], 
+          "firmwareVersion": null, 
+          "institutionPropertyNumber": null, 
+          "institutionPurchaseOrderNumber": null, 
+          "lastModifiedTimestamp": 1572042761766, 
+          "location": null, 
+          "manufacturer": "RBR Global", 
+          "mobile": false, 
+          "modelNumber": "XR-420-T24", 
+          "name": "21968", 
+          "notes": null, 
+          "ooiPartNumber": null, 
+          "ooiPropertyNumber": null, 
+          "ooiSerialNumber": null, 
+          "owner": "University of Washington", 
+          "physicalInfo": {
+            "height": -1.0, 
+            "length": -1.0, 
+            "weight": -1.0, 
+            "width": -1.0
+          }, 
+          "powerRequirements": null, 
+          "purchaseDate": 1352764800000, 
+          "purchasePrice": 15000.0, 
+          "remoteResources": [], 
+          "serialNumber": "21968", 
+          "shelfLifeExpirationDate": null, 
+          "softwareVersion": null, 
+          "uid": "ATAPL-58343-00001", 
+          "calibration": []
+        }
+      }, 
+      {
+        "@class": ".XDeployment", 
+        "eventId": 248, 
+        "editPhase": "OPERATIONAL", 
+        "eventName": "RS03ASHS-MJ03B-07-TMPSFA301", 
+        "eventType": "DEPLOYMENT", 
+        "referenceDesignator": "RS03ASHS-MJ03B-07-TMPSFA301", 
+        "deploymentNumber": 3, 
+        "versionNumber": 1, 
+        "inductiveId": null, 
+        "assetUid": null, 
+        "dataSource": "Load from [RS03ASHS_Deploy.xlsx]", 
+        "lastModifiedTimestamp": 1572043058145, 
+        "tense": "UNKNOWN", 
+        "ingestInfo": [], 
+        "notes": null, 
+        "mooring": {
+          "@class": ".XMooring", 
+          "assetId": 892, 
+          "assetType": "Mooring", 
+          "dataSource": "BulkLoad from [platform_bulk_load-AssetRecord.csv]", 
+          "deliveryDate": null, 
+          "deliveryOrderNumber": null, 
+          "depthRating": null, 
+          "description": "Cabled ASHES Vent Field: Medium Power Junction Box", 
+          "editPhase": "OPERATIONAL", 
+          "events": [], 
+          "firmwareVersion": null, 
+          "institutionPropertyNumber": null, 
+          "institutionPurchaseOrderNumber": null, 
+          "lastModifiedTimestamp": 1572042718485, 
+          "location": null, 
+          "manufacturer": "UW-APL", 
+          "mobile": false, 
+          "modelNumber": "RS03ASHS-MJ03B", 
+          "name": "SN0027", 
+          "notes": null, 
+          "ooiPartNumber": null, 
+          "ooiPropertyNumber": null, 
+          "ooiSerialNumber": null, 
+          "owner": "University of Washington", 
+          "physicalInfo": {
+            "height": -1.0, 
+            "length": -1.0, 
+            "weight": -1.0, 
+            "width": -1.0
+          }, 
+          "powerRequirements": null, 
+          "purchaseDate": null, 
+          "purchasePrice": null, 
+          "remoteResources": [], 
+          "serialNumber": "SN0027", 
+          "shelfLifeExpirationDate": null, 
+          "softwareVersion": null, 
+          "uid": "ATAPL-65244-050-0027"
+        }, 
+        "node": null, 
+        "eventStartTime": 1502755200000, 
+        "eventStopTime": null, 
+        "waterDepth": 1540.0, 
+        "location": {
+          "depth": 1540.0, 
+          "latitude": 45.93362, 
+          "longitude": -130.01368, 
+          "orbitRadius": null, 
+          "location": [
+            -130.01368, 
+            45.93362
+          ]
+        }, 
+        "deployedBy": null, 
+        "deployCruiseInfo": {
+          "@class": ".CruiseInfo", 
+          "assetUid": null, 
+          "cruiseIdentifier": null, 
+          "dataSource": "Load from [CruiseInformation.xlsx]", 
+          "editPhase": "OPERATIONAL", 
+          "eventId": 89, 
+          "eventName": "RR1714", 
+          "eventStartTime": 1502236800000, 
+          "eventStopTime": 1503100800000, 
+          "eventType": "CRUISE_INFO", 
+          "lastModifiedTimestamp": 1572042617434, 
+          "notes": null, 
+          "shipName": "R/V Roger Revelle", 
+          "tense": "UNKNOWN", 
+          "uniqueCruiseIdentifier": "RR1714"
+        }, 
+        "recoveredBy": null, 
+        "recoverCruiseInfo": null, 
+        "sensor": {
+          "@class": ".XInstrument", 
+          "assetId": 2156, 
+          "assetType": "Sensor", 
+          "dataSource": "BulkLoad from [sensor_bulk_load-AssetRecord.csv]", 
+          "deliveryDate": 1352764800000, 
+          "deliveryOrderNumber": null, 
+          "depthRating": null, 
+          "description": "Diffuse Vent Fluid 3-D Temperature Array: TMPSF Series A", 
+          "editPhase": "OPERATIONAL", 
+          "events": [], 
+          "firmwareVersion": null, 
+          "institutionPropertyNumber": null, 
+          "institutionPurchaseOrderNumber": null, 
+          "lastModifiedTimestamp": 1572042761756, 
+          "location": null, 
+          "manufacturer": "RBR Global", 
+          "mobile": false, 
+          "modelNumber": "XR-420-T24", 
+          "name": "21969", 
+          "notes": null, 
+          "ooiPartNumber": null, 
+          "ooiPropertyNumber": null, 
+          "ooiSerialNumber": null, 
+          "owner": "University of Washington", 
+          "physicalInfo": {
+            "height": -1.0, 
+            "length": -1.0, 
+            "weight": -1.0, 
+            "width": -1.0
+          }, 
+          "powerRequirements": null, 
+          "purchaseDate": 1352764800000, 
+          "purchasePrice": 15000.0, 
+          "remoteResources": [], 
+          "serialNumber": "21969", 
+          "shelfLifeExpirationDate": null, 
+          "softwareVersion": null, 
+          "uid": "ATAPL-58343-00002", 
+          "calibration": [
+            {
+              "@class": ".XCalibration", 
+              "calData": [
+                {
+                  "@class": ".XCalibrationData", 
+                  "assetUid": "ATAPL-58343-00002", 
+                  "comments": "cm", 
+                  "dataSource": "ATAPL-58343-00002__20140928_Cal_Info.xlsx", 
+                  "eventId": 31820, 
+                  "eventName": "CC_t15_position", 
+                  "eventStartTime": 1411862400000, 
+                  "eventStopTime": null, 
+                  "eventType": "CALIBRATION_DATA", 
+                  "lastModifiedTimestamp": 1572043238983, 
+                  "notes": null, 
+                  "tense": "UNKNOWN", 
+                  "value": [
+                    14.7, 
+                    25.4, 
+                    43.2
+                  ]
+                }
+              ], 
+              "name": "CC_t15_position"
+            }, 
+            {
+              "@class": ".XCalibration", 
+              "calData": [
+                {
+                  "@class": ".XCalibrationData", 
+                  "assetUid": "ATAPL-58343-00002", 
+                  "comments": "cm", 
+                  "dataSource": "ATAPL-58343-00002__20140928_Cal_Info.xlsx", 
+                  "eventId": 31822, 
+                  "eventName": "CC_t9_position", 
+                  "eventStartTime": 1411862400000, 
+                  "eventStopTime": null, 
+                  "eventType": "CALIBRATION_DATA", 
+                  "lastModifiedTimestamp": 1572043238983, 
+                  "notes": null, 
+                  "tense": "UNKNOWN", 
+                  "value": [
+                    0.0, 
+                    25.4, 
+                    17.8
+                  ]
+                }
+              ], 
+              "name": "CC_t9_position"
+            }, 
+            {
+              "@class": ".XCalibration", 
+              "calData": [
+                {
+                  "@class": ".XCalibrationData", 
+                  "assetUid": "ATAPL-58343-00002", 
+                  "comments": "cm", 
+                  "dataSource": "ATAPL-58343-00002__20140928_Cal_Info.xlsx", 
+                  "eventId": 31824, 
+                  "eventName": "CC_t18_position", 
+                  "eventStartTime": 1411862400000, 
+                  "eventStopTime": null, 
+                  "eventType": "CALIBRATION_DATA", 
+                  "lastModifiedTimestamp": 1572043238983, 
+                  "notes": null, 
+                  "tense": "UNKNOWN", 
+                  "value": [
+                    44.0, 
+                    25.4, 
+                    43.2
+                  ]
+                }
+              ], 
+              "name": "CC_t18_position"
+            }, 
+            {
+              "@class": ".XCalibration", 
+              "calData": [
+                {
+                  "@class": ".XCalibrationData", 
+                  "assetUid": "ATAPL-58343-00002", 
+                  "comments": "cm", 
+                  "dataSource": "ATAPL-58343-00002__20140928_Cal_Info.xlsx", 
+                  "eventId": 31826, 
+                  "eventName": "CC_t19_position", 
+                  "eventStartTime": 1411862400000, 
+                  "eventStopTime": null, 
+                  "eventType": "CALIBRATION_DATA", 
+                  "lastModifiedTimestamp": 1572043238983, 
+                  "notes": null, 
+                  "tense": "UNKNOWN", 
+                  "value": [
+                    22.0, 
+                    38.1, 
+                    43.2
+                  ]
+                }
+              ], 
+              "name": "CC_t19_position"
+            }, 
+            {
+              "@class": ".XCalibration", 
+              "calData": [
+                {
+                  "@class": ".XCalibrationData", 
+                  "assetUid": "ATAPL-58343-00002", 
+                  "comments": "cm", 
+                  "dataSource": "ATAPL-58343-00002__20140928_Cal_Info.xlsx", 
+                  "eventId": 31828, 
+                  "eventName": "CC_t22_position", 
+                  "eventStartTime": 1411862400000, 
+                  "eventStopTime": null, 
+                  "eventType": "CALIBRATION_DATA", 
+                  "lastModifiedTimestamp": 1572043238983, 
+                  "notes": null, 
+                  "tense": "UNKNOWN", 
+                  "value": [
+                    0.0, 
+                    50.8, 
+                    81.3
+                  ]
+                }
+              ], 
+              "name": "CC_t22_position"
+            }, 
+            {
+              "@class": ".XCalibration", 
+              "calData": [
+                {
+                  "@class": ".XCalibrationData", 
+                  "assetUid": "ATAPL-58343-00002", 
+                  "comments": "cm", 
+                  "dataSource": "ATAPL-58343-00002__20140928_Cal_Info.xlsx", 
+                  "eventId": 31830, 
+                  "eventName": "CC_t14_position", 
+                  "eventStartTime": 1411862400000, 
+                  "eventStopTime": null, 
+                  "eventType": "CALIBRATION_DATA", 
+                  "lastModifiedTimestamp": 1572043238983, 
+                  "notes": null, 
+                  "tense": "UNKNOWN", 
+                  "value": [
+                    0.0, 
+                    0.0, 
+                    17.8
+                  ]
+                }
+              ], 
+              "name": "CC_t14_position"
+            }, 
+            {
+              "@class": ".XCalibration", 
+              "calData": [
+                {
+                  "@class": ".XCalibrationData", 
+                  "assetUid": "ATAPL-58343-00002", 
+                  "comments": "cm", 
+                  "dataSource": "ATAPL-58343-00002__20140928_Cal_Info.xlsx", 
+                  "eventId": 31832, 
+                  "eventName": "CC_t20_position", 
+                  "eventStartTime": 1411862400000, 
+                  "eventStopTime": null, 
+                  "eventType": "CALIBRATION_DATA", 
+                  "lastModifiedTimestamp": 1572043238983, 
+                  "notes": null, 
+                  "tense": "UNKNOWN", 
+                  "value": [
+                    0.0, 
+                    50.8, 
+                    43.2
+                  ]
+                }
+              ], 
+              "name": "CC_t20_position"
+            }, 
+            {
+              "@class": ".XCalibration", 
+              "calData": [
+                {
+                  "@class": ".XCalibrationData", 
+                  "assetUid": "ATAPL-58343-00002", 
+                  "comments": "cm", 
+                  "dataSource": "ATAPL-58343-00002__20140928_Cal_Info.xlsx", 
+                  "eventId": 31834, 
+                  "eventName": "CC_t7_position", 
+                  "eventStartTime": 1411862400000, 
+                  "eventStopTime": null, 
+                  "eventType": "CALIBRATION_DATA", 
+                  "lastModifiedTimestamp": 1572043238983, 
+                  "notes": null, 
+                  "tense": "UNKNOWN", 
+                  "value": [
+                    0.0, 
+                    25.4, 
+                    5.1
+                  ]
+                }
+              ], 
+              "name": "CC_t7_position"
+            }, 
+            {
+              "@class": ".XCalibration", 
+              "calData": [
+                {
+                  "@class": ".XCalibrationData", 
+                  "assetUid": "ATAPL-58343-00002", 
+                  "comments": "cm", 
+                  "dataSource": "ATAPL-58343-00002__20140928_Cal_Info.xlsx", 
+                  "eventId": 31836, 
+                  "eventName": "CC_t13_position", 
+                  "eventStartTime": 1411862400000, 
+                  "eventStopTime": null, 
+                  "eventType": "CALIBRATION_DATA", 
+                  "lastModifiedTimestamp": 1572043238983, 
+                  "notes": null, 
+                  "tense": "UNKNOWN", 
+                  "value": [
+                    22.0, 
+                    12.7, 
+                    17.8
+                  ]
+                }
+              ], 
+              "name": "CC_t13_position"
+            }, 
+            {
+              "@class": ".XCalibration", 
+              "calData": [
+                {
+                  "@class": ".XCalibrationData", 
+                  "assetUid": "ATAPL-58343-00002", 
+                  "comments": "cm", 
+                  "dataSource": "ATAPL-58343-00002__20140928_Cal_Info.xlsx", 
+                  "eventId": 31838, 
+                  "eventName": "CC_t3_position", 
+                  "eventStartTime": 1411862400000, 
+                  "eventStopTime": null, 
+                  "eventType": "CALIBRATION_DATA", 
+                  "lastModifiedTimestamp": 1572043238983, 
+                  "notes": null, 
+                  "tense": "UNKNOWN", 
+                  "value": [
+                    22.0, 
+                    12.7, 
+                    5.1
+                  ]
+                }
+              ], 
+              "name": "CC_t3_position"
+            }, 
+            {
+              "@class": ".XCalibration", 
+              "calData": [
+                {
+                  "@class": ".XCalibrationData", 
+                  "assetUid": "ATAPL-58343-00002", 
+                  "comments": "cm", 
+                  "dataSource": "ATAPL-58343-00002__20140928_Cal_Info.xlsx", 
+                  "eventId": 31840, 
+                  "eventName": "CC_t6_position", 
+                  "eventStartTime": 1411862400000, 
+                  "eventStopTime": null, 
+                  "eventType": "CALIBRATION_DATA", 
+                  "lastModifiedTimestamp": 1572043238983, 
+                  "notes": null, 
+                  "tense": "UNKNOWN", 
+                  "value": [
+                    0.0, 
+                    50.8, 
+                    5.1
+                  ]
+                }
+              ], 
+              "name": "CC_t6_position"
+            }, 
+            {
+              "@class": ".XCalibration", 
+              "calData": [
+                {
+                  "@class": ".XCalibrationData", 
+                  "assetUid": "ATAPL-58343-00002", 
+                  "comments": "degrees", 
+                  "dataSource": "ATAPL-58343-00002__20140928_Cal_Info.xlsx", 
+                  "eventId": 31842, 
+                  "eventName": "CC_heading", 
+                  "eventStartTime": 1411862400000, 
+                  "eventStopTime": null, 
+                  "eventType": "CALIBRATION_DATA", 
+                  "lastModifiedTimestamp": 1572043238983, 
+                  "notes": null, 
+                  "tense": "UNKNOWN", 
+                  "value": 81.0
+                }
+              ], 
+              "name": "CC_heading"
+            }, 
+            {
+              "@class": ".XCalibration", 
+              "calData": [
+                {
+                  "@class": ".XCalibrationData", 
+                  "assetUid": "ATAPL-58343-00002", 
+                  "comments": "cm", 
+                  "dataSource": "ATAPL-58343-00002__20140928_Cal_Info.xlsx", 
+                  "eventId": 31844, 
+                  "eventName": "CC_t1_position", 
+                  "eventStartTime": 1411862400000, 
+                  "eventStopTime": null, 
+                  "eventType": "CALIBRATION_DATA", 
+                  "lastModifiedTimestamp": 1572043238983, 
+                  "notes": null, 
+                  "tense": "UNKNOWN", 
+                  "value": [
+                    14.7, 
+                    25.4, 
+                    5.1
+                  ]
+                }
+              ], 
+              "name": "CC_t1_position"
+            }, 
+            {
+              "@class": ".XCalibration", 
+              "calData": [
+                {
+                  "@class": ".XCalibrationData", 
+                  "assetUid": "ATAPL-58343-00002", 
+                  "comments": "cm", 
+                  "dataSource": "ATAPL-58343-00002__20140928_Cal_Info.xlsx", 
+                  "eventId": 31846, 
+                  "eventName": "CC_t5_position", 
+                  "eventStartTime": 1411862400000, 
+                  "eventStopTime": null, 
+                  "eventType": "CALIBRATION_DATA", 
+                  "lastModifiedTimestamp": 1572043238983, 
+                  "notes": null, 
+                  "tense": "UNKNOWN", 
+                  "value": [
+                    22.0, 
+                    38.1, 
+                    5.1
+                  ]
+                }
+              ], 
+              "name": "CC_t5_position"
+            }, 
+            {
+              "@class": ".XCalibration", 
+              "calData": [
+                {
+                  "@class": ".XCalibrationData", 
+                  "assetUid": "ATAPL-58343-00002", 
+                  "comments": "cm", 
+                  "dataSource": "ATAPL-58343-00002__20140928_Cal_Info.xlsx", 
+                  "eventId": 31850, 
+                  "eventName": "CC_t21_position", 
+                  "eventStartTime": 1411862400000, 
+                  "eventStopTime": null, 
+                  "eventType": "CALIBRATION_DATA", 
+                  "lastModifiedTimestamp": 1572043238983, 
+                  "notes": null, 
+                  "tense": "UNKNOWN", 
+                  "value": [
+                    0.0, 
+                    25.4, 
+                    43.2
+                  ]
+                }
+              ], 
+              "name": "CC_t21_position"
+            }, 
+            {
+              "@class": ".XCalibration", 
+              "calData": [
+                {
+                  "@class": ".XCalibrationData", 
+                  "assetUid": "ATAPL-58343-00002", 
+                  "comments": "cm", 
+                  "dataSource": "ATAPL-58343-00002__20140928_Cal_Info.xlsx", 
+                  "eventId": 31848, 
+                  "eventName": "CC_t16_position", 
+                  "eventStartTime": 1411862400000, 
+                  "eventStopTime": null, 
+                  "eventType": "CALIBRATION_DATA", 
+                  "lastModifiedTimestamp": 1572043238983, 
+                  "notes": null, 
+                  "tense": "UNKNOWN", 
+                  "value": [
+                    0.0, 
+                    0.0, 
+                    43.2
+                  ]
+                }
+              ], 
+              "name": "CC_t16_position"
+            }, 
+            {
+              "@class": ".XCalibration", 
+              "calData": [
+                {
+                  "@class": ".XCalibrationData", 
+                  "assetUid": "ATAPL-58343-00002", 
+                  "comments": "cm", 
+                  "dataSource": "ATAPL-58343-00002__20140928_Cal_Info.xlsx", 
+                  "eventId": 31852, 
+                  "eventName": "CC_t4_position", 
+                  "eventStartTime": 1411862400000, 
+                  "eventStopTime": null, 
+                  "eventType": "CALIBRATION_DATA", 
+                  "lastModifiedTimestamp": 1572043238983, 
+                  "notes": null, 
+                  "tense": "UNKNOWN", 
+                  "value": [
+                    44.0, 
+                    25.4, 
+                    5.1
+                  ]
+                }
+              ], 
+              "name": "CC_t4_position"
+            }, 
+            {
+              "@class": ".XCalibration", 
+              "calData": [
+                {
+                  "@class": ".XCalibrationData", 
+                  "assetUid": "ATAPL-58343-00002", 
+                  "comments": "cm", 
+                  "dataSource": "ATAPL-58343-00002__20140928_Cal_Info.xlsx", 
+                  "eventId": 31858, 
+                  "eventName": "CC_t2_position", 
+                  "eventStartTime": 1411862400000, 
+                  "eventStopTime": null, 
+                  "eventType": "CALIBRATION_DATA", 
+                  "lastModifiedTimestamp": 1572043238983, 
+                  "notes": null, 
+                  "tense": "UNKNOWN", 
+                  "value": [
+                    0.0, 
+                    0.0, 
+                    5.1
+                  ]
+                }
+              ], 
+              "name": "CC_t2_position"
+            }, 
+            {
+              "@class": ".XCalibration", 
+              "calData": [
+                {
+                  "@class": ".XCalibrationData", 
+                  "assetUid": "ATAPL-58343-00002", 
+                  "comments": "cm", 
+                  "dataSource": "ATAPL-58343-00002__20140928_Cal_Info.xlsx", 
+                  "eventId": 31856, 
+                  "eventName": "CC_t23_position", 
+                  "eventStartTime": 1411862400000, 
+                  "eventStopTime": null, 
+                  "eventType": "CALIBRATION_DATA", 
+                  "lastModifiedTimestamp": 1572043238983, 
+                  "notes": null, 
+                  "tense": "UNKNOWN", 
+                  "value": [
+                    44.0, 
+                    25.4, 
+                    81.3
+                  ]
+                }
+              ], 
+              "name": "CC_t23_position"
+            }, 
+            {
+              "@class": ".XCalibration", 
+              "calData": [
+                {
+                  "@class": ".XCalibrationData", 
+                  "assetUid": "ATAPL-58343-00002", 
+                  "comments": "cm", 
+                  "dataSource": "ATAPL-58343-00002__20140928_Cal_Info.xlsx", 
+                  "eventId": 31854, 
+                  "eventName": "CC_t12_position", 
+                  "eventStartTime": 1411862400000, 
+                  "eventStopTime": null, 
+                  "eventType": "CALIBRATION_DATA", 
+                  "lastModifiedTimestamp": 1572043238983, 
+                  "notes": null, 
+                  "tense": "UNKNOWN", 
+                  "value": [
+                    44.0, 
+                    25.4, 
+                    17.8
+                  ]
+                }
+              ], 
+              "name": "CC_t12_position"
+            }, 
+            {
+              "@class": ".XCalibration", 
+              "calData": [
+                {
+                  "@class": ".XCalibrationData", 
+                  "assetUid": "ATAPL-58343-00002", 
+                  "comments": "cm", 
+                  "dataSource": "ATAPL-58343-00002__20140928_Cal_Info.xlsx", 
+                  "eventId": 31862, 
+                  "eventName": "CC_t17_position", 
+                  "eventStartTime": 1411862400000, 
+                  "eventStopTime": null, 
+                  "eventType": "CALIBRATION_DATA", 
+                  "lastModifiedTimestamp": 1572043238983, 
+                  "notes": null, 
+                  "tense": "UNKNOWN", 
+                  "value": [
+                    22.0, 
+                    12.7, 
+                    43.2
+                  ]
+                }
+              ], 
+              "name": "CC_t17_position"
+            }, 
+            {
+              "@class": ".XCalibration", 
+              "calData": [
+                {
+                  "@class": ".XCalibrationData", 
+                  "assetUid": "ATAPL-58343-00002", 
+                  "comments": "cm", 
+                  "dataSource": "ATAPL-58343-00002__20140928_Cal_Info.xlsx", 
+                  "eventId": 31860, 
+                  "eventName": "CC_t11_position", 
+                  "eventStartTime": 1411862400000, 
+                  "eventStopTime": null, 
+                  "eventType": "CALIBRATION_DATA", 
+                  "lastModifiedTimestamp": 1572043238983, 
+                  "notes": null, 
+                  "tense": "UNKNOWN", 
+                  "value": [
+                    22.0, 
+                    38.1, 
+                    17.8
+                  ]
+                }
+              ], 
+              "name": "CC_t11_position"
+            }, 
+            {
+              "@class": ".XCalibration", 
+              "calData": [
+                {
+                  "@class": ".XCalibrationData", 
+                  "assetUid": "ATAPL-58343-00002", 
+                  "comments": "cm", 
+                  "dataSource": "ATAPL-58343-00002__20140928_Cal_Info.xlsx", 
+                  "eventId": 31864, 
+                  "eventName": "CC_t24_position", 
+                  "eventStartTime": 1411862400000, 
+                  "eventStopTime": null, 
+                  "eventType": "CALIBRATION_DATA", 
+                  "lastModifiedTimestamp": 1572043238983, 
+                  "notes": null, 
+                  "tense": "UNKNOWN", 
+                  "value": [
+                    0.0, 
+                    0.0, 
+                    81.3
+                  ]
+                }
+              ], 
+              "name": "CC_t24_position"
+            }, 
+            {
+              "@class": ".XCalibration", 
+              "calData": [
+                {
+                  "@class": ".XCalibrationData", 
+                  "assetUid": "ATAPL-58343-00002", 
+                  "comments": "cm", 
+                  "dataSource": "ATAPL-58343-00002__20140928_Cal_Info.xlsx", 
+                  "eventId": 31868, 
+                  "eventName": "CC_t10_position", 
+                  "eventStartTime": 1411862400000, 
+                  "eventStopTime": null, 
+                  "eventType": "CALIBRATION_DATA", 
+                  "lastModifiedTimestamp": 1572043238983, 
+                  "notes": null, 
+                  "tense": "UNKNOWN", 
+                  "value": [
+                    0.0, 
+                    50.8, 
+                    17.8
+                  ]
+                }
+              ], 
+              "name": "CC_t10_position"
+            }, 
+            {
+              "@class": ".XCalibration", 
+              "calData": [
+                {
+                  "@class": ".XCalibrationData", 
+                  "assetUid": "ATAPL-58343-00002", 
+                  "comments": "cm", 
+                  "dataSource": "ATAPL-58343-00002__20140928_Cal_Info.xlsx", 
+                  "eventId": 31866, 
+                  "eventName": "CC_t8_position", 
+                  "eventStartTime": 1411862400000, 
+                  "eventStopTime": null, 
+                  "eventType": "CALIBRATION_DATA", 
+                  "lastModifiedTimestamp": 1572043238983, 
+                  "notes": null, 
+                  "tense": "UNKNOWN", 
+                  "value": [
+                    0.0, 
+                    25.4, 
+                    17.8
+                  ]
+                }
+              ], 
+              "name": "CC_t8_position"
+            }
+          ]
+        }
+      }
+    ]
+  }, 
+  "provenance": {
+    "ac2563b3-8e1d-43d8-83e0-8e8fb7c643a3": {
+      "file_name": "live-2019-10-04", 
+      "parser_name": "mi.instrument.rbr.xr_420_thermistor_24.ooicore.driver", 
+      "parser_version": "0.0.12"
+    }, 
+    "f7528cde-9f76-4143-bf49-62b666ee7ed9": {
+      "file_name": "live-2019-10-21", 
+      "parser_name": "mi.instrument.rbr.xr_420_thermistor_24.ooicore.driver", 
+      "parser_version": "0.0.12"
+    }, 
+    "5cf7b38e-cd4a-4715-8472-4bc7e147103e": {
+      "file_name": "live-2019-10-07", 
+      "parser_name": "mi.instrument.rbr.xr_420_thermistor_24.ooicore.driver", 
+      "parser_version": "0.0.12"
+    }, 
+    "ee379de1-d601-433b-9a75-f3449c0633f0": {
+      "file_name": "live-2019-10-06", 
+      "parser_name": "mi.instrument.rbr.xr_420_thermistor_24.ooicore.driver", 
+      "parser_version": "0.0.12"
+    }, 
+    "98421a54-f765-4f2f-aade-ac23b410dbfd": {
+      "file_name": "live-2019-10-27", 
+      "parser_name": "mi.instrument.rbr.xr_420_thermistor_24.ooicore.driver", 
+      "parser_version": "0.0.12"
+    }, 
+    "7deed0a7-8749-4e68-aecf-6cb292f58378": {
+      "file_name": "live-2019-10-26", 
+      "parser_name": "mi.instrument.rbr.xr_420_thermistor_24.ooicore.driver", 
+      "parser_version": "0.0.12"
+    }, 
+    "580affa4-38b9-4ddf-9ccd-1768fc098d38": {
+      "file_name": "live-2019-10-01", 
+      "parser_name": "mi.instrument.rbr.xr_420_thermistor_24.ooicore.driver", 
+      "parser_version": "0.0.12"
+    }, 
+    "4246d4da-999f-4a51-a3db-0e2928012af5": {
+      "file_name": "live-2019-10-14", 
+      "parser_name": "mi.instrument.rbr.xr_420_thermistor_24.ooicore.driver", 
+      "parser_version": "0.0.12"
+    }, 
+    "8d2dadac-f623-4b4d-8a40-ce166af637e5": {
+      "file_name": "live-2019-10-11", 
+      "parser_name": "mi.instrument.rbr.xr_420_thermistor_24.ooicore.driver", 
+      "parser_version": "0.0.12"
+    }, 
+    "714ba776-d8a3-4041-a427-7306343a7a12": {
+      "file_name": "live-2019-10-24", 
+      "parser_name": "mi.instrument.rbr.xr_420_thermistor_24.ooicore.driver", 
+      "parser_version": "0.0.12"
+    }, 
+    "3690146f-0acc-4f8f-9906-b29d053d3d7d": {
+      "file_name": "live-2019-10-18", 
+      "parser_name": "mi.instrument.rbr.xr_420_thermistor_24.ooicore.driver", 
+      "parser_version": "0.0.12"
+    }, 
+    "7fc3074a-e029-4b25-8d12-25f6354e0c87": {
+      "file_name": "live-2019-10-10", 
+      "parser_name": "mi.instrument.rbr.xr_420_thermistor_24.ooicore.driver", 
+      "parser_version": "0.0.12"
+    }, 
+    "8a5aa076-3337-4396-bef7-9cda2b4180eb": {
+      "file_name": "live-2019-10-23", 
+      "parser_name": "mi.instrument.rbr.xr_420_thermistor_24.ooicore.driver", 
+      "parser_version": "0.0.12"
+    }, 
+    "b94dbb92-7941-4594-a5ff-8730170595fb": {
+      "file_name": "live-2019-10-02", 
+      "parser_name": "mi.instrument.rbr.xr_420_thermistor_24.ooicore.driver", 
+      "parser_version": "0.0.12"
+    }, 
+    "9b8db833-cf50-4b5c-a2a9-5625da74d368": {
+      "file_name": "live-2019-10-31", 
+      "parser_name": "mi.instrument.rbr.xr_420_thermistor_24.ooicore.driver", 
+      "parser_version": "0.0.12"
+    }, 
+    "6e9ba146-459e-4933-80c0-165c016a450f": {
+      "file_name": "live-2019-10-11", 
+      "parser_name": "mi.instrument.rbr.xr_420_thermistor_24.ooicore.driver", 
+      "parser_version": "0.0.12"
+    }, 
+    "bb9ddd5f-8df2-4d8d-8a87-47894df14ca1": {
+      "file_name": "live-2019-10-23", 
+      "parser_name": "mi.instrument.rbr.xr_420_thermistor_24.ooicore.driver", 
+      "parser_version": "0.0.12"
+    }, 
+    "9ee7b68a-2a3f-4460-ab37-72408e993032": {
+      "file_name": "live-2019-10-28", 
+      "parser_name": "mi.instrument.rbr.xr_420_thermistor_24.ooicore.driver", 
+      "parser_version": "0.0.12"
+    }, 
+    "365b8b43-7f96-4963-96bf-15ca5523375c": {
+      "file_name": "live-2019-10-11", 
+      "parser_name": "mi.instrument.rbr.xr_420_thermistor_24.ooicore.driver", 
+      "parser_version": "0.0.12"
+    }, 
+    "c4d83f0a-9c85-455a-b6b2-184b63456eb0": {
+      "file_name": "live-2019-10-10", 
+      "parser_name": "mi.instrument.rbr.xr_420_thermistor_24.ooicore.driver", 
+      "parser_version": "0.0.12"
+    }, 
+    "465b1668-ebca-46d8-914a-d034029a50fb": {
+      "file_name": "live-2019-10-27", 
+      "parser_name": "mi.instrument.rbr.xr_420_thermistor_24.ooicore.driver", 
+      "parser_version": "0.0.12"
+    }, 
+    "5f571981-4afd-471d-9618-4d7bbf5da5d6": {
+      "file_name": "live-2019-10-12", 
+      "parser_name": "mi.instrument.rbr.xr_420_thermistor_24.ooicore.driver", 
+      "parser_version": "0.0.12"
+    }, 
+    "80c6554f-d402-4cb1-910e-b876c0bb8f80": {
+      "file_name": "live-2019-10-05", 
+      "parser_name": "mi.instrument.rbr.xr_420_thermistor_24.ooicore.driver", 
+      "parser_version": "0.0.12"
+    }, 
+    "8dff3b12-6a24-4468-a445-0b30091e7709": {
+      "file_name": "live-2019-10-22", 
+      "parser_name": "mi.instrument.rbr.xr_420_thermistor_24.ooicore.driver", 
+      "parser_version": "0.0.12"
+    }, 
+    "d42180e9-55b7-4953-a03f-06ab8ad1cda7": {
+      "file_name": "live-2019-10-11", 
+      "parser_name": "mi.instrument.rbr.xr_420_thermistor_24.ooicore.driver", 
+      "parser_version": "0.0.12"
+    }, 
+    "d646628d-9ea9-46d4-9da9-18f68e2219c8": {
+      "file_name": "live-2019-10-28", 
+      "parser_name": "mi.instrument.rbr.xr_420_thermistor_24.ooicore.driver", 
+      "parser_version": "0.0.12"
+    }, 
+    "ecf01339-73e2-44cf-8906-d79734d98fef": {
+      "file_name": "live-2019-10-23", 
+      "parser_name": "mi.instrument.rbr.xr_420_thermistor_24.ooicore.driver", 
+      "parser_version": "0.0.12"
+    }, 
+    "f806c496-afda-412f-bfdb-f4f36e42f1ec": {
+      "file_name": "live-2019-10-08", 
+      "parser_name": "mi.instrument.rbr.xr_420_thermistor_24.ooicore.driver", 
+      "parser_version": "0.0.12"
+    }, 
+    "003456cf-7cf6-4b1b-bc61-04b2134b5604": {
+      "file_name": "live-2019-10-09", 
+      "parser_name": "mi.instrument.rbr.xr_420_thermistor_24.ooicore.driver", 
+      "parser_version": "0.0.12"
+    }, 
+    "b6720b56-17c9-418c-bc29-0dd4f2ce743a": {
+      "file_name": "live-2019-10-28", 
+      "parser_name": "mi.instrument.rbr.xr_420_thermistor_24.ooicore.driver", 
+      "parser_version": "0.0.12"
+    }, 
+    "a807481e-0579-43b3-8c91-fa9c72254190": {
+      "file_name": "live-2019-10-23", 
+      "parser_name": "mi.instrument.rbr.xr_420_thermistor_24.ooicore.driver", 
+      "parser_version": "0.0.12"
+    }, 
+    "2d9c71d4-4a70-48c5-a8f6-467ef9793532": {
+      "file_name": "live-2019-10-16", 
+      "parser_name": "mi.instrument.rbr.xr_420_thermistor_24.ooicore.driver", 
+      "parser_version": "0.0.12"
+    }, 
+    "3720fa02-bf54-4994-ba9e-429abaf25416": {
+      "file_name": "live-2019-10-20", 
+      "parser_name": "mi.instrument.rbr.xr_420_thermistor_24.ooicore.driver", 
+      "parser_version": "0.0.12"
+    }, 
+    "7aab36b2-62b3-4dfe-bd12-0ac30d9b6b70": {
+      "file_name": "live-2019-10-15", 
+      "parser_name": "mi.instrument.rbr.xr_420_thermistor_24.ooicore.driver", 
+      "parser_version": "0.0.12"
+    }, 
+    "0cb821b6-7e0c-46aa-a568-a8f22de3aff1": {
+      "file_name": "live-2019-10-24", 
+      "parser_name": "mi.instrument.rbr.xr_420_thermistor_24.ooicore.driver", 
+      "parser_version": "0.0.12"
+    }, 
+    "f41305b8-35f4-45dd-8a71-84dede2c8269": {
+      "file_name": "live-2019-10-19", 
+      "parser_name": "mi.instrument.rbr.xr_420_thermistor_24.ooicore.driver", 
+      "parser_version": "0.0.12"
+    }, 
+    "e1f6d318-9202-4add-80a4-0d3eccf38ea6": {
+      "file_name": "live-2019-10-11", 
+      "parser_name": "mi.instrument.rbr.xr_420_thermistor_24.ooicore.driver", 
+      "parser_version": "0.0.12"
+    }, 
+    "c6900590-ba31-40ee-b3e7-0f72cfa466b0": {
+      "file_name": "live-2019-10-17", 
+      "parser_name": "mi.instrument.rbr.xr_420_thermistor_24.ooicore.driver", 
+      "parser_version": "0.0.12"
+    }, 
+    "e931a12d-0d70-4f13-90a7-bcd0943d9a00": {
+      "file_name": "live-2019-10-29", 
+      "parser_name": "mi.instrument.rbr.xr_420_thermistor_24.ooicore.driver", 
+      "parser_version": "0.0.12"
+    }, 
+    "39336456-e80d-469d-878b-3ee4b2838a8e": {
+      "file_name": "live-2019-10-03", 
+      "parser_name": "mi.instrument.rbr.xr_420_thermistor_24.ooicore.driver", 
+      "parser_version": "0.0.12"
+    }, 
+    "631d87b3-1c99-40cd-ba79-03425241bd8d": {
+      "file_name": "live-2019-10-14", 
+      "parser_name": "mi.instrument.rbr.xr_420_thermistor_24.ooicore.driver", 
+      "parser_version": "0.0.12"
+    }, 
+    "082189e3-c9a2-4f79-a2d9-cd5384e710ca": {
+      "file_name": "live-2019-10-14", 
+      "parser_name": "mi.instrument.rbr.xr_420_thermistor_24.ooicore.driver", 
+      "parser_version": "0.0.12"
+    }, 
+    "099c2801-4e25-46b8-8a19-0ce9a87ec8ec": {
+      "file_name": "live-2019-10-30", 
+      "parser_name": "mi.instrument.rbr.xr_420_thermistor_24.ooicore.driver", 
+      "parser_version": "0.0.12"
+    }, 
+    "72a85ab2-2752-4de0-b8ad-8bf68de9e680": {
+      "file_name": "live-2019-10-11", 
+      "parser_name": "mi.instrument.rbr.xr_420_thermistor_24.ooicore.driver", 
+      "parser_version": "0.0.12"
+    }, 
+    "aff68d93-37e0-463c-a33b-ab93f2f58225": {
+      "file_name": "live-2019-10-11", 
+      "parser_name": "mi.instrument.rbr.xr_420_thermistor_24.ooicore.driver", 
+      "parser_version": "0.0.12"
+    }, 
+    "f8723caa-d857-44b5-a03c-d9ba5a4e9e50": {
+      "file_name": "live-2019-10-24", 
+      "parser_name": "mi.instrument.rbr.xr_420_thermistor_24.ooicore.driver", 
+      "parser_version": "0.0.12"
+    }, 
+    "e2bc48fe-5b35-4f15-93e6-25be8a5d0999": {
+      "file_name": "live-2019-10-28", 
+      "parser_name": "mi.instrument.rbr.xr_420_thermistor_24.ooicore.driver", 
+      "parser_version": "0.0.12"
+    }, 
+    "5dc57e28-eb74-41b6-90c9-80e6be73ba6d": {
+      "file_name": "live-2019-10-11", 
+      "parser_name": "mi.instrument.rbr.xr_420_thermistor_24.ooicore.driver", 
+      "parser_version": "0.0.12"
+    }, 
+    "dfe7a8ba-8e14-49fb-872e-7f54ee639c51": {
+      "file_name": "live-2019-10-13", 
+      "parser_name": "mi.instrument.rbr.xr_420_thermistor_24.ooicore.driver", 
+      "parser_version": "0.0.12"
+    }, 
+    "2a1aabf8-5a6b-4d24-b9ed-951cc2fa7729": {
+      "file_name": "live-2019-10-11", 
+      "parser_name": "mi.instrument.rbr.xr_420_thermistor_24.ooicore.driver", 
+      "parser_version": "0.0.12"
+    }, 
+    "a7ee07ff-5e8c-49d6-8c8a-b5c07b420846": {
+      "file_name": "live-2019-10-10", 
+      "parser_name": "mi.instrument.rbr.xr_420_thermistor_24.ooicore.driver", 
+      "parser_version": "0.0.12"
+    }, 
+    "16ef7365-62d3-424b-a297-caa7f595adfc": {
+      "file_name": "live-2019-10-11", 
+      "parser_name": "mi.instrument.rbr.xr_420_thermistor_24.ooicore.driver", 
+      "parser_version": "0.0.12"
+    }, 
+    "bb556497-4aa1-4bfb-87c0-4767e2f801a0": {
+      "file_name": "live-2019-10-15", 
+      "parser_name": "mi.instrument.rbr.xr_420_thermistor_24.ooicore.driver", 
+      "parser_version": "0.0.12"
+    }, 
+    "af9127c4-a41c-469b-8c58-767d011e98b2": {
+      "file_name": "live-2019-10-25", 
+      "parser_name": "mi.instrument.rbr.xr_420_thermistor_24.ooicore.driver", 
+      "parser_version": "0.0.12"
+    }
+  }, 
+  "provenance_messages": {
+    "deployment0003_RS03ASHS-MJ03B-07-TMPSFA301-streamed-tmpsf_sample_provenance_20191014T000004.200391-20191027T162313.546454.json": [], 
+    "deployment0003_RS03ASHS-MJ03B-07-TMPSFA301-streamed-tmpsf_sample_provenance_20191028T163043.502643-20191031T180123.348907.json": [], 
+    "deployment0003_RS03ASHS-MJ03B-07-TMPSFA301-streamed-tmpsf_sample_provenance_20191001T120124.784853-20191013T235954.200057.json": []
+  }, 
+  "requestUUID": {
+    "deployment0003_RS03ASHS-MJ03B-07-TMPSFA301-streamed-tmpsf_sample_provenance_20191014T000004.200391-20191027T162313.546454.json": "11fb8be1-6a04-495a-8adc-9412876321fa", 
+    "deployment0003_RS03ASHS-MJ03B-07-TMPSFA301-streamed-tmpsf_sample_provenance_20191028T163043.502643-20191031T180123.348907.json": "28b3527d-0f6d-42df-88c3-f79f4024a4da", 
+    "deployment0003_RS03ASHS-MJ03B-07-TMPSFA301-streamed-tmpsf_sample_provenance_20191001T120124.784853-20191013T235954.200057.json": "d7f1d582-875a-4db1-8666-55912ef16bbf"
+  }, 
+  "computed_provenance": {
+    "deployment0003_RS03ASHS-MJ03B-07-TMPSFA301-streamed-tmpsf_sample_provenance_20191014T000004.200391-20191027T162313.546454.json": {
+      "errors": [], 
+      "parameters": {}, 
+      "calculations": {}
+    }, 
+    "deployment0003_RS03ASHS-MJ03B-07-TMPSFA301-streamed-tmpsf_sample_provenance_20191028T163043.502643-20191031T180123.348907.json": {
+      "errors": [], 
+      "parameters": {}, 
+      "calculations": {}
+    }, 
+    "deployment0003_RS03ASHS-MJ03B-07-TMPSFA301-streamed-tmpsf_sample_provenance_20191001T120124.784853-20191013T235954.200057.json": {
+      "errors": [], 
+      "parameters": {}, 
+      "calculations": {}
+    }
+  }
+}
