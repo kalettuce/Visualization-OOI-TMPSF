@@ -1,5 +1,5 @@
 #include <stdio.h>
-#define EPOCH_SCI_DIFF 2208988800ull
+#define EPOCH_SCI_DIFF 2208988800.0
 
 int main(int argc, char **argv) {
 

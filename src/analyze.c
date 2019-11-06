@@ -1,10 +1,17 @@
 /**
- * This programs reads from 1 or more binary data file(with data encoded as doubles) and a
- * corresponding timestamps file, and prints to the output each and every intervals of time where
- * data values are between user-defined upper and lower bounds. Only intervals with length greater
- * than user-defined threshold value will be display, but all intervals are going to be included in
- * the summary section as part of the total statistics
+ * This programs reads from 1 or more binary data file and a corresponding binary timestamps file,
+ * and prints to the output each and every intervals of time where data values are between 
+ * user-defined upper and lower bounds. Only intervals with length greater than user-defined
+ * threshold value will be display, but all intervals are going to be included in the summary
+ * section as part of the total statistics.
  *
+ * Cautions:
+ *  - the data files need to be encoded as doubles
+ *  - the timestampe file needs to be encoded as 64-bit unsigned integers, using epoch time
+ *  - each of the data file needs to have the same length as the timestamp file
+ *  - the upper bound needs to be greater of equal to the lower bound
+ *
+ * analyze.c
  * Author: Kalettuce
  */
 
@@ -14,15 +21,16 @@
 #include <time.h>
 #include <wchar.h>
 
+/* definitions of the how the time strings are formatted, and a corresponding buffer length */
 #define TIME_FORMAT "%Y/%m/%d %H:%M"
 #define TIME_STR_LEN 26
 
 // print the result for one interval
-void printIntervalResult(uint64_t interval_num, char *begin_time_s, char *end_time_s,\
+void printIntervalResult(const uint64_t interval_num, char *begin_time_s, char *end_time_s,\
                          uint64_t begin_ts, uint64_t end_ts, uint64_t ins_count);
 
 // close all files pointed to by **files
-void fclose_all(FILE **files, uint32_t f_count);
+void fclose_all(FILE **files, size_t f_count);
 
 // process an single data file against a timestamp file
 void processFile(FILE *values, FILE *timestamps,\
@@ -62,9 +70,9 @@ int main(int argc, char *argv[]) {
     }
 
     // set up input file(s)
-    uint32_t infile_count = argc - 5;
+    size_t infile_count = argc - 5;
     FILE *inputs[infile_count];
-    for (int i = 0; i < infile_count; i++) { 
+    for (size_t i = 0; i < infile_count; i++) { 
         inputs[i] = fopen(argv[5+i], "r");
         if (!inputs[i]) {
             fprintf(stderr, "Cannot access input file (%s).\n", argv[1]);
@@ -192,7 +200,7 @@ void processFile(FILE *values, FILE *timestamps,\
     // housekeeping
     free(begin_time_s);
     free(end_time_s);
-    // restore the file position pointer
+    // reset the file position pointers
     fsetpos(timestamps, &ts_pos);
     fsetpos(values, &val_pos);
 }
@@ -200,7 +208,7 @@ void processFile(FILE *values, FILE *timestamps,\
 // print the statistics to stdout of a certain interval  based on the given values.
 void printIntervalResult(uint64_t interval_num, char *begin_time_s, char *end_time_s,
                          uint64_t begin_ts, uint64_t end_ts, uint64_t ins_count) {
-    printf("Interval %llu:\n\tBegin time: %s PST (%llu)\n\tEnd time: %s PST (%llu)\n\tDuration: "
+    printf("Interval %llu:\n\tBegin time: %s PST\t(%llu)\n\tEnd time: %s PST\t(%llu)\n\tDuration: "
            "%.2f days\n\tInstance count: %llu\n",\
             interval_num,
             begin_time_s,
@@ -211,7 +219,8 @@ void printIntervalResult(uint64_t interval_num, char *begin_time_s, char *end_ti
             ins_count);
 }
 
-void fclose_all(FILE **files, uint32_t f_count) {
+// close all files pointed to by **files, f_count 
+void fclose_all(FILE **files, size_t f_count) {
     while (f_count-- > 0) {
         fclose(files[f_count]);
     }

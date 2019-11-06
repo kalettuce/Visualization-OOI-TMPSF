@@ -1,9 +1,23 @@
+/**
+ * nc_extract takes an input .nc file, finds the specified variable, extracts it and encodes it
+ * into a binary file.
+ * This program is incomplete in the following ways:
+ *  - it can only take 1 input file, 1 output file and 1 variable name at a time.
+ *  - it only supports encoding as doubles.
+ * You can fix these issuses if you can read and make change to the source code below; a more
+ * generalized version will also be developed in the future
+ *
+ * nc_extract.c
+ * Author: Kalettuce
+ */
+
 #include <netcdf.h>
 #include <stdint.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
 
+/* definition of error codes */
 #define ARG_ERR 1
 #define FILE_ERR 2
 #define NC_ERR -1
@@ -51,15 +65,18 @@ int main(int argc, char **argv) {
     }
     /****************** End of misc data *********************/
     /****************** Extraction of main bulk of data ********************/
-    /****************** Reading data into memory *****************/
-    uint64_t *var = malloc(dimlen * sizeof(uint64_t));
-    size_t index[5] = {0};
-    if ((status = nc_get_var_ulonglong(ncid, varid, var))) {
-    // if ((status = nc_get_var1_double(ncid, varid, index, var))) {
+    /*----------------- Reading data into memory ----------------*/
+    double *var_data = malloc(dimlen * sizeof(double));
+    // size_t index[5] = {0};
+    if ((status = nc_get_var_double(ncid, varid, var_data))) {
+    // if ((status = nc_get_var1_double(ncid, varid, index, var_data))) {
         handle_err(status);
     }
+    for (int i = 0; i < 20; i++) {
+        printf("%f\n", var_data[i]);
+    }
 
-    /***************** Writing data to output *****************/
+    /*---------------- Writing data to output ----------------*/
     // set up the file stream, append if file exists
     FILE *output;
     if (access(argv[2], F_OK)) { // when the file doesn't exist
@@ -70,7 +87,6 @@ int main(int argc, char **argv) {
     } else {
         output = fopen(argv[2], "a");
     }
-
     // a second check in case when the file doesn't exist and user doesn't have permission
     // to write in the target directory
     if (!output) {
@@ -78,13 +94,13 @@ int main(int argc, char **argv) {
         exit(FILE_ERR);
     }
 
-    fwrite(var, dimlen, sizeof(double), output);
+    fwrite(var_data, dimlen, sizeof(double), output);
     /******************* End Extraction ************************/
 
     // housekeeping
     fclose(output);
     nc_close(ncid);
-    free(var);
+    free(var_data);
 
     return 0;
 }
