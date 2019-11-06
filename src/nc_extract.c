@@ -14,8 +14,8 @@ void handle_err(int status);
 int main(int argc, char **argv) {
 
     // argument check
-    if (argc != 3) {
-        fprintf(stderr, "Usage: nc_extract input.nc output_filename");
+    if (argc != 4) {
+        fprintf(stderr, "Usage: nc_extract input.nc outfilename variable_name");
         exit(ARG_ERR);
     }
 
@@ -31,7 +31,7 @@ int main(int argc, char **argv) {
     int varid, dimid, ndims;
     size_t dimlen;
     // get the varid
-    if ((status = nc_inq_varid(ncid, "time", &varid))) {
+    if ((status = nc_inq_varid(ncid, argv[3], &varid))) {
         handle_err(status);
     }
 
@@ -74,7 +74,7 @@ int main(int argc, char **argv) {
     // a second check in case when the file doesn't exist and user doesn't have permission
     // to write in the target directory
     if (!output) {
-        fprintf(stderr, "Permission denied, or the output path might point to a directory\n");
+        fprintf(stderr, "Permission denied, or the output path might be a directory.\n");
         exit(FILE_ERR);
     }
 
@@ -91,6 +91,6 @@ int main(int argc, char **argv) {
 
 // handles nc errors by printing out error message and exits
 void handle_err(int status) {
-    fprintf(stderr,"%s\n", nc_strerror(status));
+    fprintf(stderr,"The nc module encounters an error:\n\t%s\n", nc_strerror(status));
     exit(NC_ERR);
 }
