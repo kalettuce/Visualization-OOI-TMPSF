@@ -1,4 +1,14 @@
+/**
+ * This program takes a binary file containing OOI-style timestamps and convert it to epoch-style.
+ * The file needs to be encoded as double precision floats.
+ *
+ * to_epoch.c
+ * Author: Kalettuce
+ */
+
 #include <stdio.h>
+
+/* definition of the differnce between OOI timestamps and epoch timestamps */
 #define EPOCH_SCI_DIFF 2208988800.0
 
 int main(int argc, char **argv) {

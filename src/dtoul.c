@@ -1,3 +1,11 @@
+/**
+ * This program takes a binary file encoded with double precision floats, converts them into 64-bit
+ * unsigned integers encoding and saves them in a new output file.
+ *
+ * dtoul.c
+ * Author: Kalettuce
+ */
+
 #include <stdio.h>
 
 int main(int argc, char *argv[]) {
