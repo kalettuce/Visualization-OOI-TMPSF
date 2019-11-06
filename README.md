@@ -19,5 +19,5 @@ some manual linking. For example, to compile it with gcc, you'll need to specify
 This repo provides some sample data to experiment with. The *.nc* file contains one month's worth of
 data collected by the TMPSF thermistor array installed at the ASHES Vent field during September, 
 along with some header informations. (p.s. the NetCDF package provides command-line tools to work
-with the *.nc* files as well; more info [here](https://www.unidata.ucar.edu/software/netcdf/docs
+with the *.nc* files as well; more info [here](https://www.unidata.ucar.edu/software/netcdf/docs\
 /netcdf_utilities_guide.html).)
