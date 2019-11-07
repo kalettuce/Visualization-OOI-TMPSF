@@ -35,6 +35,6 @@ Takes a netcdf file, extract the data of a 1-D variable out of it and encode the
 (i.e. for double precision floating points, it'll encode as 8-byte chunks one after another). If
 the specified output file already exists, the data will be appended to the file, otherwise a new
 file will be created.  
-This program uses the NetCDF library so it requires manual linking at when compiling, an example of
+This program uses the NetCDF library so it requires manual linking when compiling, an example of
 compiling cammand using GCC would be:  
 > gcc -lnetcdf -lhdf5\_hl -lhdf5 -lz -lm -o nc\_extract nc\_extract.c  
