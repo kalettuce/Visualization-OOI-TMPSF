@@ -6,6 +6,7 @@
  * Author: Kalettuce
  */
 
+#include "extio.h"
 #include "get_interval.h"
 
 void processFile(FILE *values, FILE *timestamps,\

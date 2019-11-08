@@ -6,8 +6,8 @@
  * Author: Kalettuce
  */
 
-#ifndef EXTIO
-#define EXTIO
+#ifndef _EXTIO
+#define _EXTIO
 
 #include <stdio.h>
 
