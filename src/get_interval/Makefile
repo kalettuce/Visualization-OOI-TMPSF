@@ -5,7 +5,7 @@ OBJS := $(SRCS:%.c=%.o) # intermediate object files
 EXEC = get_interval # name of the final executable
 
 all: $(OBJS)
-	$(CC) -o get_interval $(OBJS)
+	$(CC) -o $(EXEC) $(OBJS)
 
 %.o: %.c
 	$(CC) -c $<
