@@ -1,0 +1,48 @@
+thermistor 1:
+    14.7    25.4    5.1
+thermistor 2:
+    0.0     0.0     5.1
+thermistor 3:
+    22.0    12.7    5.1
+thermistor 4:
+    44.0    25.4    5.1
+thermistor 5:
+    22.0    38.1    5.1
+thermistor 6:
+    0.0     50.8    5.1
+thermistor 7:
+    0.0     25.4    5.1
+thermistor 8:
+    0.0     25.4    17.8
+thermistor 9:
+    0.0     50.8    17.8
+thermistor 10:
+    22.0    38.1    17.8
+thermistor 11:
+    44.0    25.4    17.8
+thermistor 12:
+    22.0    12.7    17.8
+thermistor 13:
+    0.0     0.0     17.8
+thermistor 14:
+    14.7    25.4    17.8
+thermistor 15:
+    14.7    25.4    43.2
+thermistor 16:
+    0.0     0.0     43.2
+thermistor 17:
+    22.0    12.7    43.2
+thermistor 18:
+    44.0    25.4    43.2
+thermistor 19:
+    22.0    38.1    43.2
+thermistor 20:
+    0.0     50.8    43.2
+thermistor 21:
+    0.0     25.4    43.2
+thermistor 22:
+    0.0     50.8    81.3
+thermistor 23:
+    44.0    25.4    81.3
+thermistor 24:
+    0.0     0.0     81.3
