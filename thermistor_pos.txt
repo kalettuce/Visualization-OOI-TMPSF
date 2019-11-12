@@ -46,3 +46,8 @@ thermistor 23:
     44.0    25.4    81.3
 thermistor 24:
     0.0     0.0     81.3
+
+
+
+The positions are formatted as "x y z", where +x points east, +y points north and +z points up.
+The origin is located at the seafloor beneath thermistor 2.
