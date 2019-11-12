@@ -2,7 +2,7 @@
  * nc_extract takes an input .nc file, finds the specified variable, extracts it and encodes it
  * into a binary file.
  * This program is incomplete in the following ways:
- *  - it can only take 1 input file, 1 output file and 1 variable name at a time.
+ *  - it can only take 1 input file at a time.
  *  - it only supports encoding as doubles.
  * You can fix these issuses if you can read and make change to the source code below; a more
  * generalized version will also be developed in the future
@@ -11,19 +11,8 @@
  * Author: Kalettuce
  */
 
-#include <netcdf.h>
-#include <stdint.h>
-#include <stdio.h>
-#include <stdlib.h>
-#include <unistd.h>
-
-/* definition of error codes */
-#define ARG_ERR 1
-#define FILE_ERR 2
-#define NC_ERR -1
-
-/* handles nc errors by printing out error message and quits */
-void handle_err(int status);
+#include "extio.h"
+#include "nc_extract.h"
 
 int main(int argc, char **argv) {
 
@@ -72,9 +61,6 @@ int main(int argc, char **argv) {
     // if ((status = nc_get_var1_double(ncid, varid, index, var_data))) {
         handle_err(status);
     }
-    for (int i = 0; i < 20; i++) {
-        printf("%f\n", var_data[i]);
-    }
 
     /*---------------- Writing data to output ----------------*/
     // set up the file stream, append if file exists
@@ -103,10 +89,4 @@ int main(int argc, char **argv) {
     free(var_data);
 
     return 0;
-}
-
-// handles nc errors by printing out error message and exits
-void handle_err(int status) {
-    fprintf(stderr,"The nc module encounters an error:\n\t%s\n", nc_strerror(status));
-    exit(NC_ERR);
 }
