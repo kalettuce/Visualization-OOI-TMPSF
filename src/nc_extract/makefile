@@ -1,6 +1,6 @@
 CC = gcc
-SRCS := extio.c nc_extract.c main.c
-OBJS := $(SRCS:%.c=%.o)
+SRCS = extio.c nc_extract.c main.c
+OBJS = $(SRCS:%.c=%.o)
 LINKERFLAGS = -lnetcdf -lhdf5_hl -lhdf5 -lz -lm
 EXEC = nc_extract
 
